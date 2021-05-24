@@ -505,5 +505,13 @@ export default {
     path: "/api/v1/resource/",
     method: "GET",
   },
+  getResourceComments: {
+    path: "/api/v1/resource/{id}/comment/",
+    method: "GET",
+  },
+  addResourceComments: {
+    path: "/api/v1/resource/{id}/comment/",
+    method: "POST",
+  },
 };
 

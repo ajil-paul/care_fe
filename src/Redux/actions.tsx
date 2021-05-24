@@ -428,3 +428,9 @@ export const getResourceDetails = (pathParam: object) => {
 export const downloadResourceRequests = (params: object) => {
   return fireRequest("downloadResourceRequests", [], params);
 };
+export const getResourceComments = (id: string) => {
+  return fireRequest("getResourceComments", [], {}, { id });
+};
+export const addResourceComments = (id: string, params: object) => {
+  return fireRequest("addResourceComments", [], params, { id });
+};
